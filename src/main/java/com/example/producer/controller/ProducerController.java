@@ -26,23 +26,4 @@ public class ProducerController {
     public String getConfigData(){
         return " Configuration message :"+textMessage;
     }
-
-
-//    @GetMapping("/producer/data")
-//    public ResponseEntity getPdfData() throws IOException {
-//
-//        String filename = getClass().getResource("/static/CreditCardStatement.pdf").getFile();
-//        File file = new File(filename);
-//        FileInputStream fileInputStream = new FileInputStream(file);
-//        byte[] pdf1Bytes = new byte[(int) file.length()];
-//        fileInputStream.read(pdf1Bytes);
-//        fileInputStream.close();
-//
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.setContentType(MediaType.parseMediaType("application/pdf"));
-//        headers.add("content-disposition", "inline;filename=" + filename);
-//        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
-//        ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(pdf1Bytes, headers, HttpStatus.OK);
-//        return response;
-//    }
 }
